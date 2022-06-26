@@ -1,17 +1,17 @@
-package com.apigateway.api_gateway;
+package com.dashboard;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableHystrix
-public class ApiGatewayApplication {
+@EnableHystrixDashboard
+public class HysDashboardApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ApiGatewayApplication.class, args);
+		SpringApplication.run(HysDashboardApplication.class, args);
 	}
 
 }
