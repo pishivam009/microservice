@@ -5,7 +5,6 @@ eureka:
   instance:
     hostname: localhost
 
-
 spring:
   application:
     name: api-gateway
@@ -36,7 +35,6 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 100000
-
 
 management:
   endpoints:
